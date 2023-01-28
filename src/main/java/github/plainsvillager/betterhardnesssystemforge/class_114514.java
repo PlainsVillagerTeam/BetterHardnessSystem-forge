@@ -9,10 +9,19 @@ public class class_114514 {
     public static final int BASE = 0;
     public static final int MAX = 114514;
 
+    private int now = 0;
+
+    public int getNow() {
+        return now;
+    }
+
+    public void setNow(int now) {
+        this.now = now;
+    }
 
     @SubscribeEvent
-    public static void rightClickBlock(PlayerInteractEvent.RightClickBlock event){
-
+    public void rightClickBlock(PlayerInteractEvent.RightClickBlock event){
+        now++;
     }
 
 }
